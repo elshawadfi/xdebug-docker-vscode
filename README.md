@@ -4,42 +4,10 @@ This repository provides a Docker-based PHP development environment with Xdebug 
 
 ## Prerequisites
 
-- Docker Engine and Docker Compose installed
+- Docker Engine and Docker Compose installed based on you structure
 - Visual Studio Code with the [PHP Debug extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
 
-## Repository Structure
 
-```
-.
-├── .docker
-│   └── php-fpm
-│       └── dev
-│           └── xdebug.ini      # Xdebug configuration
-├── Dockerfile                  # PHP + Xdebug setup
-├── docker-compose.yml          # Service definitions
-└── README.md                   # This file
-```
-
-## Installation & Setup
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/yourusername/xdebug-docker-vscode.git
-   cd xdebug-docker-vscode
-   ```
-
-2. **Build and run the containers**
-
-   ```bash
-   docker-compose up --build -d
-   ```
-
-3. **Verify services are running**
-
-   ```bash
-   docker-compose ps
-   ```
 
 ## Customizing the Debug Port
 
